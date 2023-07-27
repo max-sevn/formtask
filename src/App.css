@@ -1,0 +1,173 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 165px 50px 165px;
+}
+
+.contact-me__text {
+  position: relative;
+  display: inline-block;
+  color: #8643dc;
+  font-family: "Red Hat Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-me__text:before {
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  left: 0;
+  bottom: -10px;
+  background: #8643dc;
+  display: block;
+  content: "";
+}
+
+.heading__email-layout {
+  margin-top: 32px;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.form-heading {
+  color: #21232d;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 0;
+  max-width: 512px;
+}
+
+.receiver-email {
+  color: #8643dc;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: lowercase;
+}
+
+.form {
+  margin-top: 50px;
+}
+
+.inputs-box {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.form-input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #dad2e3;
+  font-family: "Red Hat Display";
+  padding-bottom: 16px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form-input::placeholder {
+  color: #a8a0b0;
+}
+
+.button__file-layout {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.send-button {
+  border: 0;
+  padding: 18px 50px 18px 50px;
+  border-radius: 100px;
+  background-color: #8643dc;
+  color: white;
+  font-family: "Red Hat Display";
+  font-size: 18px;
+  transition: 0.2s;
+}
+.send-button:hover {
+  background-color: #9d6cdc;
+  cursor: pointer;
+}
+
+.file-box {
+  display: flex;
+  gap: 16px;
+}
+
+.socials-box {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.socials-heading {
+  color: #21232d;
+  font-family: "Red Hat Display";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.socials-links__box {
+  display: flex;
+  gap: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-wrapper {
+    margin: 50px 80px 50px 80px;
+  }
+  .contact-me__text {
+    font-size: 14px;
+  }
+
+  .form-heading {
+    font-size: 24px;
+  }
+  .receiver-email {
+    font-size: 16px;
+  }
+
+  .form-input {
+    font-size: 16px;
+  }
+
+  .send-button {
+    font-size: 14px;
+  }
+
+  .socials-heading {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-wrapper {
+    margin: 50px 40px 50px 40px;
+  }
+  .heading__email-layout {
+    flex-direction: column;
+  }
+  .button__file-layout {
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;
+  }
+}
